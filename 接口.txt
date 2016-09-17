@@ -1,0 +1,9 @@
+class:
+    top-number 是最头部的消息和动态的a标签
+    sub-number 是副导航栏的12个分区的a标签
+
+
+id:
+    top_message 是头部消息的id
+    top_active 是头部动态的id
+    video_count_1~12 是副导航栏的12个分区的 视频数量

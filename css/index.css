@@ -18,10 +18,23 @@
 
 .header li {
     float: left;
-    padding: 0 12px;
+    padding: 0 15px;
 }
 .header li a{
     height: 42px;
+}
+.header li>.top-number::after{
+    content: "10";
+    height: 14px;
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #eee;
+    background-color: #DC5481;
+    border-radius: 7px;
+    width: 20px;
+    position: absolute;
+    top: 8px;
 }
 .header .special-tougao{
     background-color: #DC5481;
@@ -49,12 +62,29 @@
 .focus .sub-nav {
     height: 46px;
     line-height: 14px;
-    margin-top: 14px;
+    margin-top: 16px;
 }
 
 .focus .sub-nav li {
     float: left;
-    padding: 14px;
+    position: relative;
+    padding: 14px 11px;
+}
+.focus .sub-nav li:nth-child(1){
+    padding-left: 0;
+}
+.focus .sub-nav li .sub-number::before{
+    content: "999";
+    height: 14px;
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #eee;
+    background-color: #FFB3CC;
+    border-radius: 4px;
+    padding: 0 4px;
+    position: absolute;
+    top: -2px;
 }
 
 /*轮播图---------------------------------*/
