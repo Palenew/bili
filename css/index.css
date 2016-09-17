@@ -55,7 +55,17 @@
     left: 50%;
     margin-left: -960px;
 }
+.banner .logo{
+    background: url("../images/logo.png");
+    width: 220px;
+    height: 105px;
+    position: absolute;
+    z-index: 2;
+    top: 55px;
+    left: 50%;
+    margin-left: -470px;
 
+}
 
 /*focus焦点-------------------------------------------------------------------*/
 /*副标题----------------------------------*/
@@ -143,7 +153,15 @@
     margin-bottom: 8px;
 }
 .tuiguang .tuiguang-video li p{
-    line-height: 26px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.tuiguang .tuiguang-banner{
+    float: right;
+    width: 260px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 /*--------------------------------------------------------------------------------------*/
