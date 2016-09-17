@@ -1,4 +1,78 @@
+/*首页独占的样式表文件*/
+
+
+/*头部------------------------------------------------------------------------*/
 
 .header {
     height: 42px;
+    background-color: RGBA(255, 255, 255, 0.7);
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.header>.container {
+    height: 42px;
+    line-height: 42px;
+}
+
+.header li {
+    float: left;
+    margin-left: 24px;
+}
+
+
+/*广告栏----------------------------------------------------------------------*/
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    position: relative;
+    left: 50%;
+    margin-left: -960px;
+}
+
+
+/*focus焦点-------------------------------------------------------------------*/
+/*副标题----------------------------------*/
+.focus .sub-nav {
+    height: 60px;
+    line-height: 14px;
+}
+
+.focus .sub-nav li {
+    float: left;
+    margin-left: 28px;
+    margin-top: 28px;
+}
+/*轮播图---------------------------------*/
+.focus .slider {
+    width: 440px;
+    height: 220px;
+    border-radius: 6px;
+    background-color: rgb(154, 235, 235);
+}
+/*热点视频------------------------------*/
+.focus .hot-video li {
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    margin-left: 20px;
+    border-radius: 3px;
+    /*overflow: hidden;*/
+}
+
+.focus .hot-video li:nth-last-child(-n+3) {
+    margin-top: 20px;
+}
+
+.focus .hot-video li a {
+    display: block;
+}
+
+.focus .hot-video li img {
+    width: 160px;
+    height: 100px;
 }

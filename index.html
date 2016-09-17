@@ -1,41 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>哔哩哔哩弹幕视频网</title>
 
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <!-- 头部 -->
     <header class="header">
-        <div class="logo">
 
-        </div>
-        <div class="nav">
-            <!-- 公共导航 -->
-            <div class="public">
-
+        <div class="container">
+            <!-- 主站，画友，游戏中心，直播，周边，BML -->
+            <div class="public-left">
+                <ul class="f_left">
+                    <li><a href="#">主站</a></li>
+                    <li><a href="javascript:;">画友</a></li>
+                    <li><a href="javascript:;">游戏中心</a></li>
+                    <li><a href="javascript:;">直播</a></li>
+                    <li><a href="javascript:;">周边</a></li>
+                    <li><a href="javascript:;">BML</a></li>
+                </ul>
             </div>
-            <!-- 个人登录，注册部分 -->
-            <div class="private">
-
+            <!-- 用户（登录，注册），消息，动态，收藏夹，[历史]，&投稿 -->
+            <div class="private-right">
+                <ul class="f_right">
+                    <li><a href="javascript:;">登录/注册</a></li>
+                    <li><a href="javascript:;">消息</a></li>
+                    <li><a href="javascript:;">动态</a></li>
+                    <li><a href="javascript:;">收藏夹</a></li>
+                    <li><a href="javascript:;">历史</a></li>
+                    <li><a href="javascript:;">投稿</a></li>
+                </ul>
             </div>
         </div>
     </header>
     <!-- 广告栏 -->
     <div class="banner">
+        <!-- 图片广告，还缺少一个biibili的logo -->
+        <div class="added">
+            <img src="images/banner.jpg" alt="和哆啦A梦一起，回到7万年前的日本探险把！" title="和哆啦A梦一起，回到7万年前的日本探险把！">
+        </div>
+        <!-- 浮在上面的一个搜索栏和排行榜按钮，可以考虑是不是用before实现 -->
+        <div class="search">
+            <div class="hot-list"></div>
+            <div class="search-input"></div>
+        </div>
+    </div>
+    <!-- 焦点： 副导航栏，轮播图，推荐的6个视频 -->
+    <div class="focus">
+        <div class="container">
+            <!-- 副导航栏 -->
+            <div class="sub-nav">
+                <!-- 首页 动画 番剧 音乐 舞蹈 游戏 科技 生活 鬼畜 时尚 广告 娱乐 影视-->
+                <ul>
+                    <li>首页</li>
+                    <li>动画</li>
+                    <li>番剧</li>
+                    <li>音乐</li>
+                    <li>舞蹈</li>
+                    <li>游戏</li>
+                    <li>科技</li>
+                    <li>生活</li>
+                    <li>鬼畜</li>
+                    <li>时尚</li>
+                    <li>广告</li>
+                    <li>娱乐</li>
+                    <li>影视</li>
+                </ul>
+                <div class="live">
+                    <div class="live-gaungchang"></div>
+                    <div class="live-live"></div>
+                </div>
+                <div class="app-box"></div>
+            </div>
+            <!-- 轮播图 440x220-->
+            <div class="slider f_left">
+
+            </div>
+            <!-- 推荐视频  160x100 ,margin 20 border-radius 3-->
+            <div class="hot-video">
+                <ul>
+                    <li><a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a></li>
+                    <li><a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a></li>
+                    <li><a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a></li>
+                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a></li>
+                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a></li>
+                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a></li>
+                
+                </ul>
+            </div>
+        </div>
 
     </div>
-    <!-- 推荐部分 -->
     <!-- 主题部分，分栏： 左边各个板块； 右边各个排行榜。 -->
 
     <script src="./lib/jQuery/jquery.js" charset="utf-8"></script>
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
