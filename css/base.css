@@ -11,6 +11,10 @@ ul,li {
     padding: 0;
     list-style: none;
 }
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
 a{
     color: #333;
     text-decoration: none;
@@ -20,7 +24,8 @@ a:hover{
     text-decoration: none;
 }
 .container{
-    width: 1040px;
+    /*为了配合bootstrap的container的左右15的padding，这里加了30px宽度*/
+    width: 1070px;
     margin: 0 auto;
 }
 .f_left {
