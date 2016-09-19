@@ -11,7 +11,7 @@
     <title>哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</title>
     <link rel="shortcut icon" href="./favicon.ico">
 
-    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -62,8 +62,8 @@
     <div class="focus clearfix">
         <div class="container">
             <!-- 副导航栏 -->
-            <div class="sub-nav">
-                <!-- 首页 动画 番剧 音乐 舞蹈 游戏 科技 生活 鬼畜 时尚 广告 娱乐 影视-->
+            <!-- 首页 动画 番剧 音乐 舞蹈 游戏 科技 生活 鬼畜 时尚 广告 娱乐 影视-->
+            <div class="sub-nav f_left">
                 <ul>
                     <li><a href="javascript:;">首页</a></li>
                     <li><a id="video_count_1" class="sub-number" href="javascript:;">动画</a></li>
@@ -79,12 +79,17 @@
                     <li><a id="video_count_11" class="sub-number" href="javascript:;">娱乐</a></li>
                     <li><a id="video_count_12" class="sub-number" href="javascript:;">影视</a></li>
                 </ul>
-                <div class="live">
-                    <div class="live-gaungchang"></div>
-                    <div class="live-live"></div>
-                </div>
-                <div class="app-box"></div>
             </div>
+            <!-- 广场 直播 链接 -->
+            <div class="live-gaungchang f_left">
+                <a href="javascript:;">广场</a>
+            </div>
+            <div class="live-live f_left">
+                <a href="javascript:;">直播</a>
+            </div>
+            <!-- 卖萌动图  手机app二维码 -->
+            <div class="app-box"></div>
+
             <!-- 轮播图 440x220-->
             <div class="slider f_left">
 
@@ -92,12 +97,24 @@
             <!-- 推荐视频  160x100 ,margin 20 border-radius 3-->
             <div class="hot-video">
                 <ul>
-                    <li><a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a></li>
-                    <li><a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a></li>
-                    <li><a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a></li>
-                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a></li>
-                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a></li>
-                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a></li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -111,10 +128,26 @@
             </div>
             <div class="tuiguang-video">
                 <ul>
-                    <li><a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /><p>比守望屁股还要毒的游戏？【独立大赏】</p></a></li>
-                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /><p>比守望屁股还要毒的游戏？【独立大赏】</p></a></li>
-                    <li><a href="javascript:;"><img src="./images/video3.jpg@160w_100h.webp" alt="" /><p>【九条命】论一部猫片如何拍得如此平庸</p></a></li>
-                    <li><a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /><p>比守望屁股还要毒的游戏？【独立大赏】</p></a></li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" />
+                            <p>比守望屁股还要毒的游戏？【独立大赏】</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" />
+                            <p>比守望屁股还要毒的游戏？【独立大赏】</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video3.jpg@160w_100h.webp" alt="" />
+                            <p>【九条命】论一部猫片如何拍得如此平庸</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" />
+                            <p>比守望屁股还要毒的游戏？【独立大赏】</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="tuiguang-banner">
@@ -127,7 +160,7 @@
 
     </div>
     <script src="./lib/jQuery/jquery.js" charset="utf-8"></script>
-    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <!-- <script src="./lib/bootstrap/js/bootstrap.js"></script> -->
     <script src="./js/index.js"></script>
 </body>
 

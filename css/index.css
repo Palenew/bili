@@ -29,7 +29,7 @@
     line-height: 12px;
     text-align: center;
     font-size: 12px;
-    color: #eee;
+    color: #fff;
     background-color: #DC5481;
     border-radius: 7px;
     width: 20px;
@@ -42,7 +42,7 @@
     border-radius: 0 0 6px 6px;
 }
 .header .special-tougao a{
-    color: #eee;
+    color: #fff;
 }
 /*广告栏----------------------------------------------------------------------*/
 
@@ -89,13 +89,41 @@
     line-height: 12px;
     text-align: center;
     font-size: 12px;
-    color: #eee;
+    color: #fff;
     background-color: #FFB3CC;
     border-radius: 4px;
     padding: 0 4px;
     position: absolute;
     top: -2px;
 }
+.focus .live-gaungchang a,.focus .live-live a{
+    position: relative;
+    height: 62px;
+    font-size: 16px;
+    line-height: 62px;
+    text-align: center;
+    padding-left: 34px;
+    padding-right: 14px;
+}
+.focus .live-gaungchang a::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    width: 20px;
+    height: 18px;
+    background: url("../images/spirit.png") -662px -920px;
+}
+.focus .live-live a::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    width: 20px;
+    height: 18px;
+    background: url("../images/spirit.png") -662px -532px;
+}
+
 
 /*轮播图---------------------------------*/
 .focus .slider {
