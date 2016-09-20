@@ -64,7 +64,51 @@
     top: 55px;
     left: 50%;
     margin-left: -470px;
-
+}
+.banner .search{
+    position: absolute;
+    left: 830px;
+    top: 128px;
+}
+.banner .search .hot-list{
+    box-sizing: border-box;
+    width: 68px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #E2E5E1;
+}
+.banner .search .hot-list span{
+    font: 12px;
+    color: #F25D8E;
+    line-height: 32px;
+    padding-left: 22px;
+}
+.banner .search .hot-list span::before{
+    content: "";
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    background: url("../images/spirit.png") -662px -663px;
+    left: 3px;
+    top: 8px;
+}
+.banner .search .search-input{
+    margin-left: 2px;
+    width: 268px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E2E5E1;
+}
+.banner .search .big-glass{
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/spirit.png") -662px -727px;
+    left: 310px;
+    top: 7px;
 }
 
 /*focus焦点-------------------------------------------------------------------*/

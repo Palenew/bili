@@ -46,7 +46,7 @@
         </div>
     </header>
     <!-- 广告栏 -->
-    <div class="banner">
+    <div class="banner clearfix">
         <!-- 图片广告，还缺少一个biibili的logo -->
         <div class="added">
             <div class="logo"></div>
@@ -54,8 +54,11 @@
         </div>
         <!-- 浮在上面的一个搜索栏和排行榜按钮，可以考虑是不是用before实现 -->
         <div class="search">
-            <div class="hot-list"></div>
-            <div class="search-input"></div>
+            <div class="hot-list f_left">
+                <span>排行榜</span>
+            </div>
+            <input type="search" class="search-input f_left" id="search_input">
+            <span class="big-glass"></span>
         </div>
     </div>
     <!-- 焦点： 副导航栏，轮播图，推荐的6个视频 -->
@@ -88,8 +91,13 @@
                 <a href="javascript:;">直播</a>
             </div>
             <!-- 卖萌动图  手机app二维码 -->
-            <div class="app-box"></div>
+            <div class="app"></div>
+                <div class="maimeng">
+                    <img src="./images/active.gif" alt="今天也是萌萌哒">
+                </div>
+                <div class="app-box">
 
+                </div>
             <!-- 轮播图 440x220-->
             <div class="slider f_left">
 
