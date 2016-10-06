@@ -20,6 +20,20 @@
     float: left;
     padding: 0 15px;
 }
+.header li:nth-child(1){
+    padding-left: 29px;
+    position: relative;
+}
+.header li:nth-child(1)::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background: url("../images/spirit.png") -918px -86px;
+    left: 1px;
+    top: 12px;
+}
 .header li a{
     height: 42px;
 }
@@ -127,6 +141,16 @@
 }
 .focus .sub-nav li:nth-child(1){
     padding-left: 0;
+    position: relative;
+}
+.focus .sub-nav li:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../images/spirit.png") -662px -1174px;
+    left: 3px;
+    top: -6px;
 }
 .focus .sub-nav li .sub-number::before{
     content: "233";
@@ -250,6 +274,7 @@
     margin-left: 20px;
     border-radius: 3px;
     overflow: hidden;
+    position: relative;
 }
 
 .focus .hot-video li:nth-last-child(-n+3) {
@@ -264,6 +289,22 @@
     display: block;
     width: 160px;
     height: 100px;
+}
+.focus .hot-video li .des{
+    width: 160px;
+    height: 100px;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    bottom: -84px;
+}
+.focus .hot-video li .des span{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,1)); 
+    display: block;
+    margin-bottom: 14px;
+}
+.focus .hot-video li:hover .des span{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0));
 }
 
 /*推广------------------------------------------------------------------------*/
@@ -290,6 +331,9 @@
     border-radius: 3px;
 }
 /*main-----------------------------------------------------------------------------------*/
+.main{
+    margin-top: 30px;
+}
 .main .sub-banner{
     margin-top: 30px;
 }
@@ -298,6 +342,11 @@
 }
 .main .main-video{
     width: 720px;
+}
+/*直播右边的广告*/
+.zhibo-banner{
+    margin-top: 82px;
+    font-size: 12px;
 }
 
 /*wideo的很多样式是与上边是一样的，所以video被做成了一共用的模块*/
@@ -343,9 +392,67 @@
     background: url("../images/spirit.png") -140px -911px
 }
 
-/*--------------------------------------------------------------------------------------*/
 
-.jiazi{
-    background-color: rgba(51, 225, 242, 0.3);
-    height: 500px;
+/*----footer----------------------------------------------------------------------------*/
+.footer{
+    margin-top: 40px;
+    padding-top: 40px;
+    background-color: #F6F9FA;
 }
+.footer .left{
+    width: 310px;
+    height: 170px;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+.footer .left div{
+    margin: 30px 0;
+}
+.footer .left a{
+    display: inline-block;
+    width: 100px;
+    height: 14px;
+    margin-bottom: 16px;
+}
+
+.footer .middle{
+    width: 310px;
+    height: 170px;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+}
+.footer .middle div{
+    margin: 30px 0;
+}
+.footer .middle a{
+    display: inline-block;
+    width: 100px;
+    height: 14px;
+    margin-bottom: 16px;
+}
+.footer .right{
+    margin-top: 48px;
+    height: 170px;
+}
+.footer .right div{
+    display: inline-block;
+    margin: 0 10px;
+    width: 60px;
+    height: 80px;
+    float: left;
+    position: relative;
+}
+.footer .right div p{
+    position: absolute;
+    bottom: 2px;
+}
+.footer .right div:nth-child(1){
+    background: url("../images/spirit.png") -1026px -196px;
+}
+.footer .right div:nth-child(2){
+    background: url("../images/spirit.png") -1026px -68px;
+}
+.footer .right div:nth-child(3){
+    background: url("../images/spirit.png") -1026px -324px;
+}
+    
