@@ -100,6 +100,7 @@
     border: none;
     border-radius: 5px;
     background-color: #E2E5E1;
+    padding-left: 10px;
 }
 .banner .search .big-glass{
     display: block;
@@ -128,7 +129,7 @@
     padding-left: 0;
 }
 .focus .sub-nav li .sub-number::before{
-    content: "999";
+    content: "233";
     height: 14px;
     line-height: 12px;
     text-align: center;
@@ -167,6 +168,37 @@
     height: 18px;
     background: url("../images/spirit.png") -662px -532px;
 }
+.focus .maimeng{
+    padding: 7px 0;
+}
+.focus .app-box{
+    width: 72px;
+    height: 58px;
+    position: relative;
+}
+.focus .app-box .app-erweima{
+    display: none;
+    position: absolute;
+    width: 259px;
+    height: 174px;
+    top: 62px;
+    right: -20px;
+}
+.focus .app-box .app-erweima .app-qrcode{
+    position: absolute;
+    left: 82px;
+    top: 32px;
+}
+.focus .app-box a{
+    margin: 14px 0 10px 14px;
+    display: block;
+    width: 58px;
+    height: 34px;
+    background: url("../images/app-link.png")
+}
+.focus .app-box a:hover{
+    background: url("../images/app-link-hover.png")
+}
 
 
 /*轮播图---------------------------------*/
@@ -175,7 +207,40 @@
     height: 220px;
     border-radius: 6px;
     background-color: #ccc;
+    position: relative;
+    overflow: hidden;
 }
+.focus .slider ul{
+    width: 2200px;
+    position: relative;
+    left: 0;
+}
+.focus .slider ul li {
+    width: 440px;
+    height: 220px;
+    float: left;
+}
+.focus .slider ol{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 20px;
+}
+.focus .slider ol li{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 5px;
+    background: url("../images/spirit.png") -854px -791px;
+}
+.focus .slider ol li:hover{
+    background: url("../images/spirit.png") -918px -791px;
+}
+.focus .slider ol li.current{
+    background: url("../images/spirit.png") -854px -726px;
+}
+
 /*热点视频------------------------------*/
 
 .focus .hot-video li {
@@ -203,31 +268,20 @@
 
 /*推广------------------------------------------------------------------------*/
 .tuiguang{
-    margin-top: 42px;
+    /*margin-top: 42px;*/
 }
-/*标题------------------------------*/
-/*推广视频---------------------------*/
-.tuiguang .tuiguang-video{
-    margin-top: 12px;
+/*推广标题 额外样式------------------------------*/
+.tuiguang .title .special-title{
+    padding: 6px;
+    height: 24px;
+    background-color: #E5E9EF;
+    border-radius: 4px;
 }
-.tuiguang .tuiguang-video li{
-    float: left;
-    width: 160px;
-    height: 160px;
-    margin-right: 20px;
-    border-radius: 3px;
-    overflow: hidden;
+.tuiguang .title .special-title i{
+    padding-right: 20px;
 }
-.tuiguang .tuiguang-video li img {
-    display: block;
-    width: 160px;
-    height: 100px;
-    margin-bottom: 8px;
-}
-.tuiguang .tuiguang-video li p{
-    font-size: 12px;
-    line-height: 20px;
-}
+/*视频video---------------------------*/
+
 .tuiguang .tuiguang-banner{
     float: right;
     width: 260px;
@@ -235,8 +289,62 @@
     overflow: hidden;
     border-radius: 3px;
 }
+/*main-----------------------------------------------------------------------------------*/
+.main .sub-banner{
+    margin-top: 30px;
+}
+.main .sub-banner img{
+    width: 100%;
+}
+.main .main-video{
+    width: 720px;
+}
+
+/*wideo的很多样式是与上边是一样的，所以video被做成了一共用的模块*/
+/*每个分区的h3前面有个图标*/
+
+.tuiguangtubiao{
+    padding-left: 20px;
+    position: relative;
+}
+.tuiguangtubiao::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: -20px;
+    background: url("../images/spirit.png") -140px -78px
+}
+.zhengzaizhibo{
+    padding-left: 20px;
+    position: relative;
+}
+.zhengzaizhibo::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: -20px;
+    background: url("../images/spirit.png") -140px -654px
+}
+.donghua{
+    padding-left: 20px;
+    position: relative;
+}
+.donghua::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: -20px;
+    background: url("../images/spirit.png") -140px -911px
+}
 
 /*--------------------------------------------------------------------------------------*/
+
 .jiazi{
     background-color: rgba(51, 225, 242, 0.3);
     height: 500px;

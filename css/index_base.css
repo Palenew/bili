@@ -1,0 +1,81 @@
+/*标题title------------------------------*/
+.title{
+    padding: 20px 0;
+}
+.title h3{
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+}
+.title .f_left a{
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 12px;
+}
+.title .f_left span{
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 12px;
+}
+.title .f_right{
+    font-size: 12px;
+    line-height: 24px
+}
+.title .f_right span{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+    margin-right: 10px;
+}
+.title .f_right .dongtai{
+    padding-left: 28px;
+    position: relative;
+}
+.title .f_right .dongtai::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    background: url("../images/spirit.png") -475px -89px;
+}
+.title .f_right .more{
+    padding-right: 20px;
+    position: relative;
+}
+.title .f_right .more::after{
+    content: '';
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    left: 32px;
+    top: 6px;
+    background: url("../images/spirit.png") -475px -217px;
+}
+.title .title-tab:hover {
+    color: #00A1D6;
+    border-bottom: 1px solid #00A1D6;
+}
+/*视频video---------------------------*/
+.video{
+    margin-top: 12px;
+}
+.video li{
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.video li img {
+    display: block;
+    width: 160px;
+    height: 100px;
+    margin-bottom: 8px;
+}
+.video li p{
+    font-size: 12px;
+    line-height: 20px;
+}

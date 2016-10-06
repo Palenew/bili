@@ -13,10 +13,15 @@
 
     <!-- <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index_base.css">
     <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./lib/jQuery/jquery.js" charset="utf-8"></script>
+    <script src="./lib/angular/angular.js" charset="utf-8"></script>
+
 </head>
 
-<body>
+<body ng-app="load">
     <!-- 头部 -->
     <header class="header">
 
@@ -91,37 +96,40 @@
                 <a href="javascript:;">直播</a>
             </div>
             <!-- 卖萌动图  手机app二维码 -->
-            <div class="app"></div>
-                <div class="maimeng">
-                    <img src="./images/active.gif" alt="今天也是萌萌哒">
+            <div class="f_right">
+                <div class="maimeng f_left">
+                    <img src="{{ data.active[ data.random ] }}" alt="今天也是萌萌哒">
                 </div>
-                <div class="app-box">
-
+                <div class="app-box f_left">
+                    <a href="javascript:;"></a>
+                    <div class="app-erweima" id="app_erweima">
+                        <img src="./images/app-box.png" alt="">
+                        <img class="app-qrcode" src="./images/app-qrcode.png" alt="">
+                    </div>
                 </div>
+            </div>
             <!-- 轮播图 440x220-->
             <div class="slider f_left">
-
+                <ul>
+                    <li ng-repeat="slider in data.slider">
+                        <a href="javascript:;">
+                            <img src="{{slider.src}}" alt="slider.text">
+                        </a>
+                    </li>
+                </ul>
+                <ol>
+                    <li class="current"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
             </div>
             <!-- 推荐视频  160x100 ,margin 20 border-radius 3-->
             <div class="hot-video">
                 <ul>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" /></a>
+                    <li ng-repeat="video in data.hot">
+                        <a href="javascript:;"><img src="{{video.src}}" alt="" /></a>
                     </li>
                 </ul>
             </div>
@@ -131,44 +139,127 @@
     <div class="tuiguang">
         <div class="container clearfix">
             <div class="title clearfix">
-                <h3 class="f_left">推广<span>tgs发车</span></h3>
-                <p class="f_right"><span>在线人数：</span><span>最新投稿：</span></p>
+                <div class="f_left">
+                    <a href="javascript:;" class="tuiguangtubiao"><h3>推广</h3></a>
+                    <span>tgs发车</span></div>
+                <div class="f_right">
+                    <div class="special-title">在线人数：<i>xxx</i>   最新投稿：<i>xxx</i></div>
+                </div>
             </div>
-            <div class="tuiguang-video">
+            <!-- video模块 -->
+            <div class="video">
                 <ul>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video1.jpg@320w_200h.webp" alt="" />
-                            <p>比守望屁股还要毒的游戏？【独立大赏】</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" />
-                            <p>比守望屁股还要毒的游戏？【独立大赏】</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video3.jpg@160w_100h.webp" alt="" />
-                            <p>【九条命】论一部猫片如何拍得如此平庸</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="./images/video2.jpg@320w_200h.webp" alt="" />
-                            <p>比守望屁股还要毒的游戏？【独立大赏】</p>
+                    <li ng-repeat="video in data.tuiguang">
+                        <a href="javascript:;"><img src="{{video.src}}" alt="" />
+                            <p ng-bind="video.text"></p>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="tuiguang-banner">
-                <a href="javascript:;"><img src="./images/banner-tuiguang.jpg" alt=""></a>
+                <a href="javascript:;"><img src="./images/banner-tuiguang.jpg" title="装甲联盟"></a>
             </div>
         </div>
     </div>
-    <!-- 主题部分，分栏： 左边各个板块； 右边各个排行榜。 -->
+    <!-- 主体部分，分栏： 左边各个main-video； 右边各个main-hot。 -->
+    <!-- 直播 -->
+    <div class="main clearfix">
+        <div class="container">
+            <div class="sub-banner">
+                <img src="./images/banner1.jpg" alt="">
+            </div>
+            <div class="main-video f_left">
+                <div class="title clearfix">
+                    <div class="f_left">
+                        <a href="javascript:;" class="zhengzaizhibo"><h3>正在直播</h3></a>
+                        <span>当前共有xxx个直播</span>
+                    </div>
+                    <div class="f_right">
+                        <span class="dongtai">3646条动态</span>
+                        <span class="more">更多</span>
+                    </div>
+                </div>
+                <!-- video模块 -->
+                <div class="video">
+                    <ul>
+                        <li ng-repeat="video in data.zhibo">
+                            <a href="javascript:;"><img src="{{video.src}}" alt="" />
+                                <p ng-bind="video.text"></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-rank f_right">
+                <div class="tab">
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="zhibo-banner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 动画 -->
+    <div class="main clearfix">
+        <div class="container">
+            <div class="sub-banner">
+                <img src="./images/banner1.jpg" alt="">
+            </div>
+            <div class="main-video f_left">
+                <div class="title clearfix">
+                    <div class="f_left">
+                        <a href="javascript:;" class="donghua"><h3>动画</h3></a>
+                        <a href="javascript:;" class="title-tab" ng-click="actions.newUp(1)">有新动态</a>
+                        <a href="javascript:;" class="title-tab" ng-click="actions.newUp(2)">最新投稿</a>
+                    </div>
+                    <div class="f_right">
+                        <span class="dongtai">3646条动态</span>
+                        <span class="more">更多</span>
+                    </div>
+                </div>
+                <!-- video模块 -->
+                <div class="video">
+                    <ul>
+                        <li ng-repeat="video in data.donghua">
+                            <a href="javascript:;"><img src="{{video.src}}" alt="" />
+                                <p ng-bind="video.text"></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-rank f_right">
+                <div class="tab">
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="tab_1">
+
+                    </div>
+                    <div class="tab_2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="jiazi">
 
     </div>
-    <script src="./lib/jQuery/jquery.js" charset="utf-8"></script>
+
     <!-- <script src="./lib/bootstrap/js/bootstrap.js"></script> -->
+    <script src="./js/index_ang.js"></script>
     <script src="./js/index.js"></script>
 </body>
 

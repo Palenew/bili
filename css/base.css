@@ -25,7 +25,7 @@ a:hover{
 }
 .container{
     /*为了配合bootstrap的container的左右15的padding，这里加了30px宽度*/
-    width: 1010px;
+    width: 980px;
     margin: 0 auto;
 }
 .f_left {
