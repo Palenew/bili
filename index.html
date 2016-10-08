@@ -148,7 +148,7 @@
                     <a href="javascript:;" class="tuiguangtubiao"><h3>推广</h3></a>
                     <span>天下第一魂歌会！</span></div>
                 <div class="f_right">
-                    <div class="special-title">在线人数：<strong>xxx</strong>   最新投稿：<strong>xxx</strong></div>
+                    <div class="special-title">在线人数：<strong>xxx</strong> 最新投稿：<strong>xxx</strong></div>
                 </div>
             </div>
             <!-- video模块 -->
@@ -215,6 +215,7 @@
     <!-- 动画 -->
     <div class="main clearfix" ng-controller="donghua">
         <div class="container">
+            <!-- 左边部分 -->
             <div class="main-video f_left">
                 <div class="title clearfix">
                     <div class="f_left">
@@ -242,20 +243,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-
-                    </div>
-                    <div class="tab_2">
-
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -290,20 +302,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-
-                    </div>
-                    <div class="tab_2">
-
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -338,20 +361,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -386,20 +420,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -434,20 +479,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -482,20 +538,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -530,20 +597,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -578,20 +656,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -626,20 +715,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -674,20 +774,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -722,20 +833,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -770,20 +892,31 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
@@ -818,51 +951,62 @@
                     </ul>
                 </div>
             </div>
+            <!-- 右侧部分 -->
             <div class="main-rank f_right">
-                <div class="tab">
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="tab_1">
-    
-                    </div>
-                    <div class="tab_2">
-    
-                    </div>
+                <div class="rank-title clearfix">
+                    <h4>排行</h4>
+                    <ul>
+                        <li><a href="javascript:;" ng-click="actions.newRank(1)">全部</a></li>
+                        <li><a href="javascript:;" ng-click="actions.newRank(2)">原创</a></li>
+                    </ul>
+                </div>
+                <div class="ranking">
+                    <ul class="clearfix">
+                        <li>
+                            <i>1</i>
+                            <a href="javascript:;">
+                                <img src="{{data.ranktop.src}}" alt="">
+                                <p>{{data.ranktop.title}}</p>
+                                <p>{{data.ranktop.count}}</p>
+                            </a>
+                        </li>
+                        <li ng-repeat="rank in data.ranking">
+                            <i>{{rank.ranknum}}</i>
+                            <a href="javascript:;">{{rank.title}}</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="ranking-more">查看更多></a>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
+
+
+
+
     <div class="footer clearfix">
         <div class="container">
             <div class="left f_left">
-                    <div>Bilibili</div>
-                    <a>关于我们</a>
-                    <a>友情链接</a>
-                    <a>哔哩哔哩周边</a>
-                    <a>我们联系</a>
-                    <a>加入我们</a>
+                <div>Bilibili</div>
+                <a>关于我们</a>
+                <a>友情链接</a>
+                <a>哔哩哔哩周边</a>
+                <a>我们联系</a>
+                <a>加入我们</a>
             </div>
             <div class="middle f_left">
-                    <div>传送门</div>
-                    <a>帮助中心汇报</a>
-                    <a>高级弹幕</a>
-                    <a>活动专题页</a>
-                    <a>侵权申诉</a>
-                    <a>分院帽计划</a>
-                    <a>活动中心</a>
-                    <a>建议/BUG</a>
-                    <a>壁纸站</a>
-                    <a>名人堂</a>
+                <div>传送门</div>
+                <a>帮助中心汇报</a>
+                <a>高级弹幕</a>
+                <a>活动专题页</a>
+                <a>侵权申诉</a>
+                <a>分院帽计划</a>
+                <a>活动中心</a>
+                <a>建议/BUG</a>
+                <a>壁纸站</a>
+                <a>名人堂</a>
             </div>
-            <div class="right f_right" >
+            <div class="right f_right">
                 <div>
                     <p>app下载</p>
                 </div>
@@ -872,7 +1016,7 @@
                 <div>
                     <p>官方微信</p>
                 </div>
-                
+
             </div>
         </div>
     </div>

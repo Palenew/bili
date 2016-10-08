@@ -119,3 +119,100 @@
     top: 1px;
     background: url("../images/spirit.png") -282px -218px;
 }
+
+/*每个模块中右边的排行部分*/
+
+.main-rank .rank-title{
+    width: 260px;
+    padding-top: 38px;
+}
+.main-rank .rank-title h4{
+    display: inline-block;
+    width: 36px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.main-rank .rank-title ul{
+    display: inline-block;
+    padding-left: 20px;
+    height: 24px;
+}
+.main-rank .rank-title ul li {
+    line-height: 24px;
+    display: inline-block;
+    font-size: 12px;
+}
+.main-rank .ranking{
+    padding-top: 20px;
+    width: 260px;
+    /*height: 313px;*/
+}
+.main-rank .ranking ul{
+    padding-bottom: 15px;
+}
+.main-rank .ranking li {
+    position: relative;
+    height: 18px;
+    margin-top: 20px;
+    padding-left: 25px;
+    font-size: 12px;
+    width: 235px;
+    overflow: hidden;
+}
+.main-rank .ranking li:nth-child(1){
+    height: 50px;
+    margin: 0;
+}
+.main-rank .ranking li:nth-child(1) a{
+    display: block;
+    height: 50px;
+}
+.main-rank .ranking li a{
+    display: block;
+}
+.main-rank .ranking img{
+    width: 80px;
+    height: 50px;
+    float: left;
+}
+.main-rank .ranking p{
+    padding-left: 85px;
+}
+.main-rank .ranking li i{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 18px;
+    padding: 0 3px;
+    border-radius: 4px;
+    background: #f25d8e;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+    font-style: normal;
+    
+}
+.main-rank .ranking li:nth-child(n+4) i{
+    background-color: #b8c0cc;
+}
+.main-rank .ranking .ranking-more{
+    display: block;
+    width: 260px;
+    height: 24px;
+    background-color: #e5e9ef;
+    color: #222;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+}
+.main-rank .ranking .ranking-more:hover{
+    background-color: #ccd0d7;
+    color: #222;
+}
